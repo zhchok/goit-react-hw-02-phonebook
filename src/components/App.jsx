@@ -56,7 +56,7 @@ export class App extends Component {
 		const visibleContancts = this.getVisibleContacts();
 
 		return (
-			<Box>
+			<Box textAlign="center" margin="0 auto" width="500px" p="20px">
 				<GlobalStyle />
 				<h1>Phonebook</h1>
 				<Form onSubmit={this.addContact} />

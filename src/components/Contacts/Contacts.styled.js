@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Item = styled.li`
 	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	gap: ${p => p.theme.space[4]}px;
 	margin-bottom: ${p => p.theme.space[3]}px;
 	:last-of-type {

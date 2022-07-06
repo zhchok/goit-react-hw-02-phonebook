@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     background-color: #fff;
     color: #010101;
+	 margin: 0px;
   }
   img {
     display: block;

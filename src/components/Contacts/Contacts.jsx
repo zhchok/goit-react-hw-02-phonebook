@@ -3,7 +3,7 @@ import { AiOutlineUserDelete } from "react-icons/ai";
 import { Box } from "components/box/box";
 export function ContactsList({ contacts, onDeleteContact }) {
 	return (
-		<Box textAlign="center">
+		<Box>
 			<Title>Contacts</Title>
 			<ul>
 				{contacts.map(({ id, name, number }) => (
