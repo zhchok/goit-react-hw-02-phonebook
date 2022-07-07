@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { GlobalStyle } from "./base/GlobalStyle";
 import { Box } from "./box/box";
-import Form from "./Form/Form";
+import { PhonebookForm } from "./Form/Form";
 import { ContactsList } from "./Contacts/Contacts";
 import { nanoid } from "nanoid";
 import { SearchBox } from "./SearchBox/SearchBox";
@@ -17,7 +17,7 @@ export class App extends Component {
 		filter: "",
 	};
 
-	addContact = ({ name, number }) => {
+	addContact = (name, number) => {
 		const contact = {
 			id: nanoid(),
 			name,
@@ -58,8 +58,8 @@ export class App extends Component {
 		return (
 			<Box textAlign="center" margin="0 auto" width="500px">
 				<GlobalStyle />
-				<h1>Phonebook</h1>
-				<Form onSubmit={this.addContact} />
+
+				<PhonebookForm onSubmit={this.addContact} />
 				<SearchBox value={filter} onChange={this.changeFilter} />
 
 				<ContactsList contacts={visibleContancts} onDeleteContact={this.deleteContact}></ContactsList>
